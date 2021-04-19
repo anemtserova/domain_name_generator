@@ -1,9 +1,9 @@
 window.onload = function () {
 
-    let pronoun = ['the', 'my', "your"];
-    let adj = ['great', 'happy', "hidden"];
-    let noun = ['brain', 'garden', 'codebook'];
-    let domExt = ['.com', '.me', '.pro'];
+        let pronoun = ['the', 'my', "your"];
+        let adj = ['great', 'happy', "hidden"];
+        let noun = ['brain', 'garden', 'codebook'];
+        let domExt = ['.com', '.me', '.pro'];
     
     
         for (let itemA of pronoun) {
@@ -15,6 +15,4 @@ window.onload = function () {
                 }
             }
         }
-        
-    //customDomain(pronoun, adj, noun, domExt);
 };
