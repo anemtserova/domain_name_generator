@@ -1,18 +1,20 @@
-let pronoun = ['the', 'my', "your"];
-let adj = ['great', 'happy', "hidden"];
-let noun = ['brain', 'garden', 'codebook'];
-let domExt = ['.com', '.me', '.pro'];
+window.onload = function () {
 
-let customDomain=(arrA, arrB, arrC, arrD)=>{
-	for (let itemA of arrA) {
-  	    for (let itemB of arrB) {
-    	    for (let itemC of arrC) {
-      	        for (let itemD of arrD) {
-        	        console.log(itemA+itemB+itemC+itemD);
+    let pronoun = ['the', 'my', "your"];
+    let adj = ['great', 'happy', "hidden"];
+    let noun = ['brain', 'garden', 'codebook'];
+    let domExt = ['.com', '.me', '.pro'];
+    
+    
+        for (let itemA of pronoun) {
+              for (let itemB of adj) {
+                for (let itemC of noun) {
+                    for (let itemD of domExt) {
+                        document.getElementById("domain-name").innerHTML+=`<p>${itemA+itemB+itemC+itemD}</p>`;
+                    }
+                }
+            }
         }
-      }
-    }
-  }
-}
-
-customDomain(pronoun, adj, noun, domExt);
+        
+    //customDomain(pronoun, adj, noun, domExt);
+};
